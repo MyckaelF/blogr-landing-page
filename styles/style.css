@@ -109,11 +109,11 @@ li {
     max-height: 1000%;
 }
 
-.header .navbar .menus li picture img {
+.header .navbar .menus li svg {
     transition: all 500ms ease;
 }
 
-.header .navbar .menus li:hover > picture img {
+.header .navbar .menus li:hover > svg {
     transform: rotate(180deg);
 }
 
@@ -127,7 +127,7 @@ li {
     text-decoration:underline;
 }
 
-.header .navbar .menus li picture img {
+.header .navbar .menus li svg {
     margin-left: 0.5rem;
 }
 
@@ -368,6 +368,11 @@ li {
         width: 85%;
     }
 
+    .header .navbar .menus li svg path {
+        fill: none;
+        stroke: #FF7B86;
+    }
+
     .headerSection {
         background: rgb(255,143,112);
         background: linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
@@ -575,6 +580,7 @@ li {
 
     .header .navbar .containerMenu {
         width: 60%;
+        font-size: 0.6rem;
     }
     .benefitsFirts .container, .infrastructure .container, .benefitsSecond .container {
         margin-top: 30%;
@@ -593,6 +599,10 @@ li {
 }
 
 @media (min-width: 769px) and (max-width: 1320px) {
+
+    .header .navbar .containerMenu {
+        width: 100%;
+    }
 
     .benefitsFirts .container, .infrastructure .container, .benefitsSecond .container {
         margin-top: 15%;
